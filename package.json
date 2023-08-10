@@ -1,4 +1,5 @@
 {
+  "homepage": "https://joselacruz.github.io/lazy-loading-vanila-js",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",

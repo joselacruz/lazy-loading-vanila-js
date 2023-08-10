@@ -5,6 +5,7 @@ module.exports = {
     src: '/_dist_',
   },
   buildOptions: {
-    baseUrl: '',
+    sourcemap: true,
+    baseUrl: 'https://joselacruz.github.io/lazy-loading-vanila-js',
   },
 }
