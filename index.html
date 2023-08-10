@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://joselacruz.github.io/lazy-loading-vanila-js/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <!--
+      Snowpack will replace https://joselacruz.github.io/lazy-loading-vanila-js/ with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://joselacruz.github.io/lazy-loading-vanila-js/_dist_/index.css"
+    />
+    <title>Lazy loading</title>
+  </head>
+
+  <body>
+    <div class="text-center">
+      <!-- <p
+          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+        >
+          Snowpack
+        </p> -->
+
+      <h3
+        class="
+          mt-2
+          text-3xl
+          leading-8
+          font-extrabold
+          tracking-tight
+          text-gray-900
+          sm:text-4xl sm:leading-10
+        "
+      >
+        Lazy loading
+      </h3>
+      <p class="mt-4">
+        Las imágenes agregadas no se descargarán hasta que sean visibles en la
+        pantalla
+      </p>
+    </div>
+
+    <nav>
+      <p class="describe-button">
+        Agrega una nueva imagen al final de la lista
+      </p>
+      <button class="buttonAdd button">Agregar Imagen</button>
+      <button class="buttonRemoveAll button">Limpiar</button>
+      <div class="count-images">
+        <p>Images Agregadas</p>
+        <span id="added">0</span>
+        <p>Images Cargadas</p>
+        <span id="loads">0</span>
+      </div>
+    </nav>
+
+    <div id="images"></div>
+    <!-- <div class="show-big-img">
+      <figure>
+       
+        <img src="https://randomfox.ca/images/117.jpg" alt="">
+      </figure>
+     </div> -->
+    <!-- Add more scripts here -->
+    <script type="module" src="https://joselacruz.github.io/lazy-loading-vanila-js/_dist_/index.js"></script>
+  </body>
+</html>
