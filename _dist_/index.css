@@ -2,7 +2,7 @@
 @import "../_snowpack/pkg/tailwindcss/dist/components.css";
 @import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
 :root {
-    --contenido-before: "Antes del contenido";
+    --base-path: '/lazy-loading-vanila-js/';
   }
   
 nav{
@@ -64,7 +64,8 @@ nav .describe-button{
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
-    background-image: url(/trash-347.png);
+    background-image: url(/lazy-loading-vanila-js/trash-347.png);
+    /* background-image: url(/trash-347.png);  in Local img */
     background-size: 24px;
     background-color: #5f5252;
     background-position: center;
@@ -147,7 +148,7 @@ nav .describe-button{
     display: inline-block;
     width: 36px;
     height: 35px;
-    background-image: url(/close-5758\ \(1\).png);
+    background-image: var(--base-path) url(lazy-loading-vanila-js/close.png);
     background-repeat: no-repeat;
     
 }
